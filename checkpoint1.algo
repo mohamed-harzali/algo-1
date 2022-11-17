@@ -1,0 +1,45 @@
+ALGORITHM compteur
+
+fonction compteur d'espace (ch:chaine , n: entier):
+
+Debut
+ Ecrire (" Entrez une phrase : " )
+ Lire (ch)
+ n = 0
+  Pour i de 1 à Len(ch)
+   si (ch[i] == ' ' et ch[i+1].isalpha() et (i > 0)):  
+     n ← n + 1
+   FinSi
+  fin pour
+  Ecrire  ("dans cette phrase il y a",n,"ecpace" )
+Fin
+
+fonction compteur de voy (chr:chaine , nb: entier):
+
+Debut
+ Ecrire (" Entrez une phrase : " )
+ Lire (chr)
+ nb = 0
+  Pour i de 1 à Len(chr)
+   si (chr[i].isalpha()):  
+     nb ← nb + 1
+   FinSi
+  fin pour
+  Ecrire  ("dans cette phrase il y a",nb,"voy" )
+Fin
+
+fonction compteur de mots(str:chaine , in:entier):
+
+Debut
+ Ecrire (" Entrez une phrase : " )
+ Lire (str)
+ in = 1
+  Pour i de 1 à Len(ch)
+   si (ch[i] == ' ' et ch[i+1].isalpha() et (i > 0)):  
+     in ← in + 1
+   FinSi
+  fin pour
+  Ecrire  ("dans cette phrase il y a",n,"mots" )
+Fin
+
+
