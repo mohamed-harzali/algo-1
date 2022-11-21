@@ -1,45 +1,27 @@
 ALGORITHM compteur
 
-fonction compteur d'espace (ch:chaine , n: entier):
-
-Debut
  Ecrire (" Entrez une phrase : " )
  Lire (ch)
- n = 0
-  Pour i de 1 à Len(ch)
-   si (ch[i] == ' ' et ch[i+1].isalpha() et (i > 0)):  
-     n ← n + 1
-   FinSi
+ var:
+ cm= 0
+ cv=0
+ cl=0
+ Debut
+  Pour i de 0 à Len(ch-1)
+   tant que (ch[i] =!"." 
+    si ch[i]=" " alors
+     cm ← cm + 1
+    FinSi
+    si ch[i]=("a,e,o,i,u,y")alors
+     cv=cv+1
+     cl=cl+1
+      sinon
+      cl=cl+1
+    fin si
   fin pour
-  Ecrire  ("dans cette phrase il y a",n,"ecpace" )
-Fin
-
-fonction compteur de voy (chr:chaine , nb: entier):
-
-Debut
- Ecrire (" Entrez une phrase : " )
- Lire (chr)
- nb = 0
-  Pour i de 1 à Len(chr)
-   si (chr[i].isalpha()):  
-     nb ← nb + 1
-   FinSi
-  fin pour
-  Ecrire  ("dans cette phrase il y a",nb,"voy" )
-Fin
-
-fonction compteur de mots(str:chaine , in:entier):
-
-Debut
- Ecrire (" Entrez une phrase : " )
- Lire (str)
- in = 1
-  Pour i de 1 à Len(ch)
-   si (ch[i] == ' ' et ch[i+1].isalpha() et (i > 0)):  
-     in ← in + 1
-   FinSi
-  fin pour
-  Ecrire  ("dans cette phrase il y a",n,"mots" )
+  return(cm)
+  return(cv)
+  return(cl)
 Fin
 
 
